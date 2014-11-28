@@ -47,3 +47,5 @@
   (db-close! db))
 
 (provide main)
+
+(module test racket/base)
