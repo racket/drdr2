@@ -70,5 +70,3 @@
  [db-list ((db?) () #:rest (listof string?) . ->* . (listof string?))] 
  [db-set! ((db? serializable?) () #:rest (non-empty-listof string?) . ->* . void)]
  [db-close! (db? . -> . void)])
-
-(module test racket/base)

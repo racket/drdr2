@@ -30,5 +30,3 @@
           (num (* i j))))))
     
     (db-close! db))))
-
-(module test racket/base)
