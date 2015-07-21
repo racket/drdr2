@@ -4,10 +4,17 @@
          racket/serialize
          racket/contract
          racket/local
-         unstable/bytes
          (planet jaymccarthy/mongodb))
 
 (struct db (m d heap-mc tree-mc))
+
+(define (read/bytes bs)
+  (read (open-input-bytes bs)))
+
+(define (write/bytes v)
+  (define by (open-output-bytes))
+  (write v by)
+  (get-output-bytes by))
 
 (define (ensure-mongo-collection d c #:init? init?)
   (if init?
