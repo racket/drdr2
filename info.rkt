@@ -8,6 +8,5 @@
 (define test-responsibles '((all jay)))
 (define deps '("base"
                "compatibility-lib"
-               "sandbox-lib"
-               "typed-racket-lib"))
+               "sandbox-lib"))
 (define build-deps '("eli-tester"))

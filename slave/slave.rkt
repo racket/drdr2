@@ -1,6 +1,5 @@
 #lang racket/base
 (require mzlib/thread
-         unstable/match
          racket/match
          racket/port
          racket/sandbox)
